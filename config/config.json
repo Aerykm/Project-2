@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "passport_demo",
-    "host": "127.0.0.1",
+    "password": "Drowssap2020sql!",
+    "database": "subscription_db",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
