@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="stylesheets/add.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,29 +24,46 @@
     </div>
   </nav>
 
+  <div>
+    <button onclick="window.location.href='display.html'" type="button" class="btn btn-primary btn-lg" id="display">Display all Subscriptions</button>
+    <button onclick="window.location.href='members.html'" type="button" class="btn btn-primary btn-lg" id="manage">Manage Subscriptions</button>
+  </div>
+
     <form id="subs-info" class="needs-validation" novalidate>
-        <div class="form-row">
-            <div id="db-info" class="col-md-6 mb-3">
-            <label for="validationCustom01">Subscription name</label>
-            <input type="text" class="form-control" id="validationCustom01" required>
+        <form id="cms">
+            <div class="form-group">
+
+                <div class="container" id="subs-input"> 
+                    <div class="row">
+                        <label for="subs_name">Subscription Name:</label>
+                        <input type="text" id="subs_name" name="subs_name">
+                    </div>
+                    <div class="row">
+                        <label for="subs_date">Subscription Date:</label>
+                        <input type="text" id="subs_date" name="subs_date">
+                    </div>
+                    <div class="row">
+                        <label for="title">Subscription Cost:</label>
+                        <input type="text" id="subs_cost" name="subs_cost">
+                    </div>      
+                </div> 
+                <label for="title">Trial or Subscription:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="is-trial" value="false" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                        This is a Trial Version
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="is-subs" value="true">
+                    <label class="form-check-label" for="gridRadios2">
+                        This is a Subscription
+                    </label>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" id="add-subs">Add</button>
             </div>
-            <div id="db-info" class="col-md-6 mb-3">
-            <label for="validationCustom02">Due Date</label>
-            <input type="text" class="form-control" id="validationCustom02" required>
-            </div>
-        </div>
-        <div class="form-row">
-            <div id="db-info" class="col-md-6 mb-3">
-                <label for="validationCustom03">Subscription Cost</label>
-                <input type="text" class="form-control" id="validationCustom03" required>
-            </div>
-            <div id="db-info" class="col-md-6 mb-3">
-                <label for="validationCustom03">Trial version</label>
-                <input type="text" class="form-control" id="validationCustom03" required>
-            </div>
-        </div>
-        </div>
-        <button type="button" class="btn btn-primary btn-lg" id="add-subs">Add</button>
+        </form>
+       
         
         
     </form>
