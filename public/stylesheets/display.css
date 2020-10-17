@@ -1,6 +1,6 @@
 form.signup,
 form.login {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 body {
@@ -19,7 +19,8 @@ nav.navbar {
 
 }
 div.col-md-6 {
-  margin-top: 50px;
+  margin-top: 20px;
+  height: 80vh;
   border: 10px solid black;
   border-radius: 50px 50px 50px 50px;
   text-align: center;
@@ -50,7 +51,7 @@ h4 {
   text-align: center;
   padding: 15px;
   margin-left: 25px;
-  width: 30vw;
+  width: 45vw;
 }
 button.btn  {
   color: black;
@@ -94,7 +95,6 @@ label {
 #subs-info {
   margin: auto auto;
   width: 70vw;
-  height: 80vh;
   margin-top: 50px;
   border: 10px solid black;
   border-radius: 50px 50px 50px 50px;
@@ -118,6 +118,6 @@ button#add-subs.btn.btn-primary {
 
 #subs-input {
   width: 50%;
-  margin-top: 80px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
