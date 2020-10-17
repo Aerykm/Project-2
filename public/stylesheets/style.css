@@ -2,3 +2,115 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+
+body {
+  padding: 10px;
+  background-image: url("../images/Techfix.gif.gif");
+  background-size: 1600px 750px;
+  background-repeat: no-repeat;
+  background-position-y: top;
+}
+
+nav.navbar {
+  border-radius: 50px 50px 50px 50px;
+  border: 5px solid orangered;
+  background-color: #f8ef42;
+  background-image: linear-gradient(315deg, #f8ef42 0%, #0fd64f 74%);
+
+}
+div.col-md-6 {
+  margin-top: 50px;
+  border: 10px solid black;
+  border-radius: 50px 50px 50px 50px;
+  text-align: center;
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+  -webkit-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+  -moz-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+  box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+
+}
+
+.logout {
+  float: right;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h4 {
+  float: left;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.btn {
+  text-align: center;
+  padding: 15px;
+  margin-left: 25px;
+  width: 30vw;
+}
+button.btn  {
+  color: black;
+  border: 4px solid lime;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #2876f9;
+  background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
+}
+
+#add.btn.btn-primary {
+  color: black;
+  border: 4px solid lime;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #2876f9;
+  background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
+}
+input {
+  text-align: center;
+  letter-spacing: 0.3em;
+  
+}
+label {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#subs-info {
+  margin: auto auto;
+  width: 70vw;
+  height: 80vh;
+  margin-top: 50px;
+  border: 10px solid black;
+  border-radius: 50px 50px 50px 50px;
+  text-align: center;
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+  -webkit-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+  -moz-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+  box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+}
+
+button#add-subs.btn.btn-primary {
+  margin-top: 60px;
+}
+
+#db-info {
+  border: 1px solid black;
+  height: 150px;
+  padding: 20px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Passport Authentication</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  <link href="stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <h4>Logged In as: <span class="member-name"></span>
+        </h4>
+      </div>
+      <div class="navbar-footer">
+        <a class="logout" href="/logout">
+          Logout
+        </a>
+      </div>
+    </div>
+  </nav>
+
+    <form id="subs-info" class="needs-validation" novalidate>
+        <div class="form-row">
+            <div id="db-info" class="col-md-6 mb-3">
+            <label for="validationCustom01">Subscription name</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+            </div>
+            <div id="db-info" class="col-md-6 mb-3">
+            <label for="validationCustom02">Due Date</label>
+            <input type="text" class="form-control" id="validationCustom02" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div id="db-info" class="col-md-6 mb-3">
+                <label for="validationCustom03">Subscription Cost</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+            </div>
+            <div id="db-info" class="col-md-6 mb-3">
+                <label for="validationCustom03">Trial version</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+            </div>
+        </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg" id="add-subs">Add</button>
+        
+        
+    </form>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
+
+</body>
+
+</html>
