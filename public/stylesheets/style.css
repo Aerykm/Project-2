@@ -16,8 +16,8 @@ nav.navbar {
   border: 5px solid orangered;
   background-color: #f8ef42;
   background-image: linear-gradient(315deg, #f8ef42 0%, #0fd64f 74%);
-
 }
+
 div.col-md-6 {
   margin-top: 50px;
   border: 10px solid black;
@@ -31,13 +31,35 @@ div.col-md-6 {
 
 }
 
-.logout {
-  float: right;
-  padding: 15px;
-  font-size: 20px;
-  font-weight: bold;
+.navbar-header {
+  float: left;
+}
+.navbar-brand {
+  float: none;
+  margin-top: -39px;
 }
 
+
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 50px;
+  margin-left: 480px;
+  letter-spacing: 0.09em;
+  font-weight: bold;
+  color: black;
+}
+
+
+h2 {
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
+}
+h3 {
+  margin-left: 350px;
+  font-size: 18px;
+  font-weight: bolder;
+}
 h4 {
   float: left;
   padding: 10px;
@@ -61,6 +83,10 @@ button.btn  {
   border-radius: 50px 50px 50px 50px;
   background-color: #2876f9;
   background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
+  -webkit-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+  -moz-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+  box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+
 }
 
 #add.btn.btn-primary {
@@ -74,11 +100,7 @@ button.btn  {
   background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
 }
 
-h2 {
-  font-size: 45px;
-  font-weight: bold;
-  color: black;
-}
+
 input {
   text-align: center;
   letter-spacing: 0.3em;

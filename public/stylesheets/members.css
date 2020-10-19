@@ -1,6 +1,6 @@
 form.signup,
 form.login {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 body {
@@ -19,8 +19,7 @@ nav.navbar {
 
 }
 div.col-md-6 {
-  margin-top: 20px;
-  height: 80vh;
+  margin-top: 50px;
   border: 10px solid black;
   border-radius: 50px 50px 50px 50px;
   text-align: center;
@@ -38,31 +37,32 @@ div.col-md-6 {
 }
 
 .navbar-header {
-  float: right;
+    float: right;
 }
 .navbar-brand {
-  float: left;
-  margin-top: -41px;
+    float: left;
+    margin-top: -41px;
 }
 
+
 h1 {
-font-family: 'Londrina Shadow', cursive;
-font-size: 50px;
-margin-left: 480px;
-letter-spacing: 0.09em;
-font-weight: bold;
-color: black;
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 50px;
+  margin-left: 480px;
+  letter-spacing: 0.09em;
+  font-weight: bold;
+  color: black;
 }
 
 h2 {
-font-size: 45px;
-font-weight: bold;
-color: black;
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
 }
 h3 {
-font-size: 40px;
-font-weight: bolder;
-margin: 30px 20px 0 50px;
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 30px 20px 0 50px;
 }
 h4 {
   float: left;
@@ -71,12 +71,14 @@ h4 {
   font-weight: bold;
 }
 
+
+
 button.btn  {
   color: black;
   margin-left: 20px;
+  width: 31vw;
   border: 4px solid lime;
   font-size: 18px;
-  width: 47vw;
   font-weight: bold;
   border-radius: 50px 50px 50px 50px;
   background-color: #2876f9;
@@ -84,7 +86,6 @@ button.btn  {
   -webkit-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
   -moz-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
   box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
-
 }
 
 #add.btn.btn-primary {
@@ -92,72 +93,26 @@ button.btn  {
   border: 4px solid lime;
   font-size: 18px;
   font-weight: bold;
-  letter-spacing: 0.2em;
   border-radius: 50px 50px 50px 50px;
   background-color: #2876f9;
   background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
-  
-}
-
-
-input {
-  text-align: center;
-  letter-spacing: 0.3em;
-  
-}
-
-label {
-  color: black;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-#subs-info {
-  margin: auto auto;
-  width: 70vw;
-  margin-top: 50px;
-  border: 10px solid black;
-  border-radius: 50px 50px 50px 50px;
-  text-align: center;
-  background-color: #ff4e00;
-  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
-  -webkit-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
-  -moz-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
-  box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
-}
-
-button#add-subs.btn.btn-primary {
-  margin: 20px auto;
-  width: 100%;
-}
-
-#db-info {
-  border: 1px solid black;
-  height: 150px;
-  padding: 20px;
-}
-
-#subs-input {
-  width: 60%;
-  margin-top: 30px;
-  margin-bottom: 20px;
 }
 
 button.btn.btn-secondary {
-  margin: auto;
-  color: black;
-  border: 1px solid black;
-  font-size: 15px;
-  font-weight: bolder;
-  border-radius: 50px 50px 50px 50px;
-  background-color: #ff4e00;
-  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
-  -webkit-box-shadow: inset -16px -12px 81px -49px rgba(219,76,190,1);
-  -moz-box-shadow: inset -16px -12px 81px -49px rgba(219,76,190,1);
-  box-shadow: inset -16px -12px 81px -49px rgba(219,76,190,1);
-}
+    margin: auto;
+    color: black;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    -webkit-box-shadow: inset -16px -12px 81px -49px rgba(219,76,190,1);
+    -moz-box-shadow: inset -16px -12px 81px -49px rgba(219,76,190,1);
+    box-shadow: inset -16px -12px 81px -49px rgba(219,76,190,1);
+  }
 
 #member {
-  width: 18vw;
-  vertical-align: 0.3em;
+    width: 18vw;
+    vertical-align: 0.3em;
 }

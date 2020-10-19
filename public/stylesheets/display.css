@@ -1,6 +1,6 @@
 form.signup,
 form.login {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 body {
@@ -19,8 +19,7 @@ nav.navbar {
 
 }
 div.col-md-6 {
-  margin-top: 20px;
-  height: 80vh;
+  margin-top: 50px;
   border: 10px solid black;
   border-radius: 50px 50px 50px 50px;
   text-align: center;
@@ -33,46 +32,26 @@ div.col-md-6 {
 }
 
 .logout {
-  float: right;
-  padding: 15px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
-h4 {
-  float: left;
-  padding: 10px;
-  font-size: 20px;
+.navbar-header {
+    float: right;
+}
+.navbar-brand {
+    float: left;
+    margin-top: -41px;
+}
+
+
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 50px;
+  margin-left: 480px;
+  letter-spacing: 0.09em;
   font-weight: bold;
-}
-
-
-.btn {
-  text-align: center;
-  padding: 15px;
-  margin-left: 25px;
-  width: 45vw;
-}
-button.btn  {
   color: black;
-  border: 4px solid lime;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 0.2em;
-  border-radius: 50px 50px 50px 50px;
-  background-color: #2876f9;
-  background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
-}
-
-#add.btn.btn-primary {
-  color: black;
-  border: 4px solid lime;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 0.2em;
-  border-radius: 50px 50px 50px 50px;
-  background-color: #2876f9;
-  background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
 }
 
 h2 {
@@ -80,6 +59,44 @@ h2 {
   font-weight: bold;
   color: black;
 }
+h3 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 30px 20px 0 50px;
+}
+h4 {
+  float: left;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button.btn  {
+  color: black;
+  margin-left: 20px;
+  width: 47vw;
+  border: 4px solid lime;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #2876f9;
+  background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
+  -webkit-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+  -moz-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+  box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+}
+
+#add.btn.btn-primary {
+  color: black;
+  border: 4px solid lime;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #2876f9;
+  background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
+}
+
+
 input {
   text-align: center;
   letter-spacing: 0.3em;
@@ -95,6 +112,7 @@ label {
 #subs-info {
   margin: auto auto;
   width: 70vw;
+  height: 80vh;
   margin-top: 50px;
   border: 10px solid black;
   border-radius: 50px 50px 50px 50px;
@@ -118,6 +136,25 @@ button#add-subs.btn.btn-primary {
 
 #subs-input {
   width: 50%;
-  margin-top: 30px;
+  margin-top: 80px;
   margin-bottom: 20px;
+}
+
+button.btn.btn-secondary {
+  margin: auto;
+  color: black;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+  -webkit-box-shadow: inset -16px -12px 81px -49px rgba(219,76,190,1);
+  -moz-box-shadow: inset -16px -12px 81px -49px rgba(219,76,190,1);
+  box-shadow: inset -16px -12px 81px -49px rgba(219,76,190,1);
+}
+
+#member {
+    width: 18vw;
+    vertical-align: 0.3em;
 }
