@@ -51,7 +51,45 @@ module.exports = function(app) {
     }
   });
 
- // app.get("/api/subscriptions", function(req, res){
-  //  db.
-  //})
+  app.get ("/api/subscriptions", function(req, res) {
+    db.subscription.findAll({})
+      .then(function(dbsubscription) {
+        res.json(dbsubscription)
+      });
+  });
+
+  app.post("/api/subscription", function(req, res) {
+    console.log(req.body);
+    db.subscription.create({
+      title: req.body.title,
+      body: req.body.body
+    })
+      .then(function(dbsubscription) {
+        res.json(dbsubscription)
+      });
+  });
+
+  app.delete("/api/subscription/:id", function(req, res) {
+    db.subscription.destroy({
+      where: {
+        id: req.params.id
+      }
+    })
+      .then(function(dbsubscription) {
+        res.json(dbsubscription);
+      });
+  });
+
+  app.put("/api/subscription", function(req, res) {
+    db.subscription.update(req.body,
+      {
+        where: {
+          id: req.body.id
+        }
+      })
+        .then(function(dbsubscription) {
+          res.json(dbsubscription);
+        });
+  });
 };
+

@@ -4,6 +4,7 @@ form.login {
 }
 
 body {
+  background-color: rgba(23, 26, 207, 0.911);
   padding: 10px;
   background-image: url("../images/Techfix.gif.gif");
   background-size: 1600px 750px;
@@ -84,7 +85,6 @@ button.btn  {
   -webkit-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
   -moz-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
   box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
-
 }
 
 #add.btn.btn-primary {
