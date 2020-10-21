@@ -4,6 +4,7 @@ form.login {
 }
 
 body {
+  background-color: rgba(23, 26, 207, 0.911);
   padding: 10px;
   background-image: url("../images/Techfix.gif.gif");
   background-size: 1600px 750px;
@@ -33,12 +34,37 @@ div.col-md-6 {
 }
 
 .logout {
-  float: right;
-  padding: 15px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
+.navbar-header {
+  float: right;
+}
+.navbar-brand {
+  float: left;
+  margin-top: -41px;
+}
+
+h1 {
+font-family: 'Londrina Shadow', cursive;
+font-size: 50px;
+margin-left: 480px;
+letter-spacing: 0.09em;
+font-weight: bold;
+color: black;
+}
+
+h2 {
+font-size: 45px;
+font-weight: bold;
+color: black;
+}
+h3 {
+font-size: 40px;
+font-weight: bolder;
+margin: 30px 20px 0 50px;
+}
 h4 {
   float: left;
   padding: 10px;
@@ -46,22 +72,19 @@ h4 {
   font-weight: bold;
 }
 
-
-.btn {
-  text-align: center;
-  padding: 15px;
-  margin-left: 25px;
-  width: 45vw;
-}
 button.btn  {
   color: black;
+  margin-left: 20px;
   border: 4px solid lime;
   font-size: 18px;
+  width: 47vw;
   font-weight: bold;
-  letter-spacing: 0.2em;
   border-radius: 50px 50px 50px 50px;
   background-color: #2876f9;
   background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
+  -webkit-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+  -moz-box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
+  box-shadow: 44px 36px 77px 21px rgba(0,0,0,0.75);
 }
 
 #add.btn.btn-primary {
@@ -73,13 +96,10 @@ button.btn  {
   border-radius: 50px 50px 50px 50px;
   background-color: #2876f9;
   background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
+  
 }
 
-h2 {
-  font-size: 45px;
-  font-weight: bold;
-  color: black;
-}
+
 input {
   text-align: center;
   letter-spacing: 0.3em;
@@ -107,7 +127,8 @@ label {
 }
 
 button#add-subs.btn.btn-primary {
-  margin-top: 60px;
+  margin: 20px auto;
+  width: 100%;
 }
 
 #db-info {
@@ -117,7 +138,26 @@ button#add-subs.btn.btn-primary {
 }
 
 #subs-input {
-  width: 50%;
+  width: 60%;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+button.btn.btn-secondary {
+  margin: auto;
+  color: black;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+  -webkit-box-shadow: inset -16px -12px 81px -49px rgba(219,76,190,1);
+  -moz-box-shadow: inset -16px -12px 81px -49px rgba(219,76,190,1);
+  box-shadow: inset -16px -12px 81px -49px rgba(219,76,190,1);
+}
+
+#member {
+  width: 18vw;
+  vertical-align: 0.3em;
 }

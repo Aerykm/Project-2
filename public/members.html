@@ -6,25 +6,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="stylesheets/members.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <h4>Logged In as: <span class="member-name"></span>
-        </h4>
-      </div>
-      <div class="navbar-footer">
+        <button id="member" class="btn btn-secondary btn-sm member-name"></button>
         <a class="logout" href="/logout">
           Logout
         </a>
       </div>
+      <div class="navbar-brand">
+        <h1>SUBSCRIPTION HUB</h1>
+      </div>
     </div>
   </nav>
   <div>
-    <button type="button" class="btn btn-primary btn-lg" id="display">Display all Subscriptions</button>
+    <button onclick="window.location.href='display.html'" type="button" class="btn btn-primary btn-lg" id="display">Display all Subscriptions</button>
     <button onclick="window.location.href='add.html'" type="button" class="btn btn-primary btn-lg" id="add">Add Subscriptions</button>
     <button type="button" class="btn btn-primary btn-lg" id="manage">Manage Subscriptions</button>
   </div>
