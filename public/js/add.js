@@ -14,7 +14,7 @@ $("#add-subs").on("click", function(event) {
     trialorSubscription: $("#trial_period").val().trim()
   };
 
-  $.post("/add", newSubscription)
+  $.post("/api/add", newSubscription)
     .then(function(data) {
       console.log("add.html", data);
       alert("adding subcription...");

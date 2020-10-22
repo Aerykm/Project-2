@@ -1,6 +1,7 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+var Subscription = require("../models/subscription.js");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -52,45 +53,45 @@ module.exports = function(app) {
   });
 
   app.get ("/api/display", function(req, res) {
-    db.subscription.findAll({})
-      .then(function(dbsubscription) {
-        res.json(dbsubscription)
+    db.Subscription.findAll({})
+      .then(function(dbSubscription) {
+        res.json(dbSubscription)
       });
   });
 
-  app.post("/api/display", function(req, res) {
+  app.post("/api/add", function(req, res) {
     console.log(req.body);
-    db.subscription.create({
+    db.Subscription.create({
       subsName: req.body.subsName,
-      subsDate: req.body.subsDate,
+      dueDate: req.body.subsDate,
       subsCost: req.body.subsCost,
       trialPeriod: req.body.trialPeriod
     })
-      .then(function(dbsubscription) {
-        res.json(dbsubscription)
+      .then(function(dbSubscription) {
+        res.json(dbSubscription)
       });
   });
 
   app.delete("/api/display/:id", function(req, res) {
-    db.subscription.destroy({
+    db.Subscription.destroy({
       where: {
         id: req.params.id
       }
     })
-      .then(function(dbsubscription) {
-        res.json(dbsubscription);
+      .then(function(dbSubscription) {
+        res.json(dbSubscription);
       });
   });
 
   app.put("/api/display", function(req, res) {
-    db.subscription.insert(req.body,
+    db.Subscription.insert(req.body,
       {
         where: {
           id: req.body.id
         }
       })
-        .then(function(dbsubscription) {
-          res.json(dbsubscription);
+        .then(function(dbSubscription) {
+          res.json(dbSubscription);
         });
   });
 };
