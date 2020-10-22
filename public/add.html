@@ -46,17 +46,9 @@
               <input type="text" id="subs_cost" name="subs_cost">
               <br />  
               <label for="title">Trial or Subscription:</label>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="is-trial" value="false" checked>
-                <label class="form-check-label" for="gridRadios1">
-                    This is a Trial Version
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="is-subs" value="true">
-                <label class="form-check-label" for="gridRadios2">
-                    This is a Subscription
-                </label>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="trial_period">
+                <label class="form-check-label" for="trial_period" value="true">This is a trial</label>
               </div>
               <button type="button" class="btn btn-primary btn-lg" id="add-subs">Add</button>   
             </div>
@@ -69,25 +61,8 @@
     </form>
     
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/members.js"></script>
+  <script type="text/javascript" src="js/add.js"></script>
 
-  <script type="text/javascript">
-  $("add-subs").on("click", function(event) {
-    event.preventdefault();
-    var newSubscription = {
-      subscriptionName: $("subscription-Name").val().trim(),
-      subscriptionDate: $("subscription-Date").val().trim(),
-      subscriptionCost: $("subscription-Cost").val().trim(),
-      trialorSubscription: $("subscription-or-Trial").val().trim()
-    };
-
-    $.post("/display", newSubscription)
-      .then(function(data) {
-        console.log("add.html", data);
-        alert("adding character...");
-      });
-  })
-  </script>
 
 </body>
 

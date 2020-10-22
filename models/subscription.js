@@ -1,16 +1,25 @@
 module.exports = function(sequelize, DataTypes) {
     var Subscription = sequelize.define("Subscription", {
-      title: {
+      subName: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           len: [1]
         }
       },
-      body: {
-        type: DataTypes.TEXT,
+      subDate: {
+        type: DataTypes.DATEONLY,
+        allowNull: false,
+      },
+      subCost: {
+        type: DataTypes.INTEGER,
         allowNull: false,
         len: [1]
+      },
+      trialPeriod: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: false
       }
     });
   
