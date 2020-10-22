@@ -20,3 +20,4 @@ $("#add-subs").on("click", function(event) {
       alert("adding subcription...");
     });
 });
+

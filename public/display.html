@@ -14,23 +14,23 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button id="member" class="btn btn-secondary btn-sm member-name"></button>
+        <button onclick="window.location.href='add.html'" type="button" class="btn btn-primary btn-lg" id="add">Add Subscriptions</button>
+    <button onclick="window.location.href='members.html'" type="button" class="btn btn-primary btn-lg" id="manage">Manage Subscriptions</button>
+      </div>
+      <div class="navbar-footer">
+        <button id="member" class="btn btn-secondary btn-lg member-name"></button>
         <a class="logout" href="/logout">
           Logout
         </a>
       </div>
-      <div class="navbar-brand">
-        <h1>SUBSCRIPTION HUB</h1>
-      </div>
     </div>
   </nav>
-  <div>
-    <button onclick="window.location.href='add.html'" type="button" class="btn btn-primary btn-lg" id="add">Add Subscriptions</button>
-    <button onclick="window.location.href='members.html'" type="button" class="btn btn-primary btn-lg" id="manage">Manage Subscriptions</button>
+  <div class="sidenav">
+    <h1>.  SUBSCRIPTION HUB</h1>
   </div>
  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/members.js"></script>
+  <script type="text/javascript" src="js/display.js"></script>
 
 </body>
 

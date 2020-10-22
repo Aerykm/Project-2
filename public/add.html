@@ -14,55 +14,52 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button id="member" class="btn btn-secondary btn-sm member-name"></button>
+        <button onclick="window.location.href='display.html'" type="button" class="btn btn-primary btn-lg" id="display">Display all Subscriptions</button>
+    <button onclick="window.location.href='members.html'" type="button" class="btn btn-primary btn-lg" id="manage">Manage Subscriptions</button>
+      </div>
+      <div class="navbar-footer">
+        <button id="member" class="btn btn-secondary btn-lg member-name"></button>
         <a class="logout" href="/logout">
           Logout
         </a>
       </div>
-      <div class="navbar-brand">
-        <h1>SUBSCRIPTION HUB</h1>
-      </div>
     </div>
   </nav>
-
-  <div>
-    <button onclick="window.location.href='display.html'" type="button" class="btn btn-primary btn-lg" id="display">Display all Subscriptions</button>
-    <button onclick="window.location.href='members.html'" type="button" class="btn btn-primary btn-lg" id="manage">Manage Subscriptions</button>
+  <div class="sidenav">
+    <h1>.  SUBSCRIPTION HUB</h1>
   </div>
-
-    <form id="subs-info" class="needs-validation" novalidate>
-      <form id="cms">
-        <div class="form-group">
-
-          <div class="container" id="subs-input"> 
-            <div class="form-group">
-              <label for="subs_name">Subscription Name:</label>
-              <input type="text" id="subs_name" name="subs_name">
-              <br />
-              <label for="subs_date">Subscription Date:</label>
-              <input type="text" id="subs_date" name="subs_date">
-              <br />
-              <label for="title">Subscription Cost:</label>
-              <input type="text" id="subs_cost" name="subs_cost">
-              <br />  
-              <label for="title">Trial or Subscription:</label>
-              <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="trial_period">
-                <label class="form-check-label" for="trial_period" value="true">This is a trial</label>
-              </div>
-              <button type="button" class="btn btn-primary btn-lg" id="add-subs">Add</button>   
+ 
+  <form id="subs-info" class="needs-validation" novalidate>
+    <form id="cms">
+      <div class="form-group">
+        <div class="container" id="subs-input"> 
+          <div class="form-group">
+            <label for="subs_name">Subscription Name:</label>
+            <input type="text" id="subs_name" name="subs_name">
+            <br />
+            <label for="subs_date">Subscription Date:</label>
+            <input type="text" id="subs_date" name="subs_date">
+            <br />
+            <label for="subs_cost">Subscription Cost:</label>
+            <input type="text" id="subs_cost" name="subs_cost">
+            <br />  
+            <label for="title">Is this a Trial or a Subscription?</label>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="trial_period">
+              <label class="form-check-label" for="trial_period" value="true">This is a trial</label>
             </div>
+            <button type="button" class="btn btn-primary btn-lg" id="add-subs">Submit</button>   
           </div>
         </div>
-      </form>
-       
-        
-        
+      </div>
     </form>
+      
+      
+      
+  </form>
     
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/add.js"></script>
-
 
 </body>
 
