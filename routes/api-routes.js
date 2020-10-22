@@ -51,25 +51,27 @@ module.exports = function(app) {
     }
   });
 
-  app.get ("/api/subscriptions", function(req, res) {
+  app.get ("/api/display", function(req, res) {
     db.subscription.findAll({})
       .then(function(dbsubscription) {
         res.json(dbsubscription)
       });
   });
 
-  app.post("/api/subscription", function(req, res) {
+  app.post("/api/display", function(req, res) {
     console.log(req.body);
     db.subscription.create({
-      title: req.body.title,
-      body: req.body.body
+      subsName: req.body.subsName,
+      subsDate: req.body.subsDate,
+      subsCost: req.body.subsCost,
+      trialPeriod: req.body.trialPeriod
     })
       .then(function(dbsubscription) {
         res.json(dbsubscription)
       });
   });
 
-  app.delete("/api/subscription/:id", function(req, res) {
+  app.delete("/api/display/:id", function(req, res) {
     db.subscription.destroy({
       where: {
         id: req.params.id
@@ -80,8 +82,8 @@ module.exports = function(app) {
       });
   });
 
-  app.put("/api/subscription", function(req, res) {
-    db.subscription.update(req.body,
+  app.put("/api/display", function(req, res) {
+    db.subscription.insert(req.body,
       {
         where: {
           id: req.body.id
@@ -92,4 +94,3 @@ module.exports = function(app) {
         });
   });
 };
-

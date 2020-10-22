@@ -5,22 +5,24 @@ form.login {
 
 body {
   background-color: rgba(23, 26, 207, 0.911);
-  padding: 10px;
+  padding-top: 10px;
   background-image: url("../images/Techfix.gif.gif");
-  background-size: 1600px 750px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-y: top;
 }
 
 nav.navbar {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
   border-radius: 50px 50px 50px 50px;
   border: 5px solid orangered;
   background-color: #f8ef42;
   background-image: linear-gradient(315deg, #f8ef42 0%, #0fd64f 74%);
 }
-
 div.col-md-6 {
-  margin-top: 50px;
+  margin-top: 250px;
   border: 10px solid black;
   border-radius: 50px 50px 50px 50px;
   text-align: center;
@@ -118,7 +120,7 @@ label {
   margin: auto auto;
   width: 70vw;
   height: 80vh;
-  margin-top: 50px;
+  padding-top: 250px;
   border: 10px solid black;
   border-radius: 50px 50px 50px 50px;
   text-align: center;
@@ -143,4 +145,20 @@ button#add-subs.btn.btn-primary {
   width: 50%;
   margin-top: 80px;
   margin-bottom: 20px;
+}
+
+button.btn.btn-default {
+  color: black;
+  border: 4px solid black;
+  width: 15vw;
+  font-size: 18px;
+  letter-spacing: 0.0em;
+  font-weight: bold;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #ff4e00;
+  background-color: #f907fc;
+  background-image: linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);
+  -webkit-box-shadow: inset -1px -11px 132px -68px rgba(41,3,10,1);
+  -moz-box-shadow: inset -1px -11px 132px -68px rgba(41,3,10,1);
+   box-shadow: inset -1px -11px 132px -68px rgba(41,3,10,1);
 }
