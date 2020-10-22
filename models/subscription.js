@@ -17,9 +17,8 @@ module.exports = function(sequelize, DataTypes) {
     trialPeriod: {
       type: DataTypes.BOOLEAN,
       defaultValue: false
-    },{
-    freezeTableName: true
     }
+  
   });
 
 

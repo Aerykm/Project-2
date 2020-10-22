@@ -4,9 +4,7 @@ $(document).ready(() => {
     $.get("/api/user_data").then(data => {
       $(".member-name").text(data.email);
     });
- 
 });
-  
 $("#add-subs").on("click", function(event) {
   event.preventDefault();
   var newSubscription = {
@@ -22,3 +20,4 @@ $("#add-subs").on("click", function(event) {
       alert("adding subcription...");
     });
 });
+
