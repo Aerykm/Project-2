@@ -1,25 +1,24 @@
 module.exports = function(sequelize, DataTypes) {
+  
   var Subscription = sequelize.define("Subscription", {
-    subName: {
+    subsName: {
       type: DataTypes.STRING,
-      allowNull: false,
       validate: {
         len: [1]
       }
     },
-    subDate: {
+    dueDate: {
       type: DataTypes.DATEONLY,
-      allowNull: false,
     },
-    subCost: {
+    subsCost: {
       type: DataTypes.INTEGER,
-      allowNull: false,
       len: [1]
     },
     trialPeriod: {
       type: DataTypes.BOOLEAN,
-      allowNull: false,
       defaultValue: false
+    },{
+    freezeTableName: true
     }
   });
 
