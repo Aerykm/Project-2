@@ -53,10 +53,9 @@ module.exports = function(app) {
   });
 
   app.get ("/api/display", function(req, res) {
-    db.Subscription.findAll({})
-      .then(function(dbSubscription) {
-        res.json(dbSubscription)
-      });
+    db.Subscription.findAll({}).then(function(results) {
+      res.json(results)
+    });
   });
 
   app.post("/api/add", function(req, res) {
