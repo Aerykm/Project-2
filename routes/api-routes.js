@@ -63,9 +63,8 @@ module.exports = function(app) {
     console.log(req.body);
     db.Subscription.create({
       subsName: req.body.subsName,
-      dueDate: req.body.subsDate,
+      dueDate: req.body.dueDate,
       subsCost: req.body.subsCost,
-      trialPeriod: req.body.trialPeriod
     })
       .then(function(dbSubscription) {
         res.json(dbSubscription)
