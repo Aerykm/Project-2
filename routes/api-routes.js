@@ -71,13 +71,14 @@ module.exports = function(app) {
   });
 
   app.delete("/api/display/:id", function(req, res) {
-    db.Subscription.destroy({
+    console.log("Subscription ID")
+    Subscription.destroy({
       where: {
         id: req.params.id
       }
     })
-      .then(function(dbSubscription) {
-        res.json(dbSubscription);
+      .then(function() {
+        res.end();
       });
   });
 
