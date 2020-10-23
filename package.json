@@ -17,7 +17,6 @@
     "bcryptjs": "2.4.3",
     "express": "^4.17.1",
     "express-session": "^1.16.1",
-    "googleapis": "^61.0.0",
     "mysql": "^2.18.1",
     "mysql2": "^1.6.5",
     "passport": "^0.4.1",

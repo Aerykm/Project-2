@@ -14,11 +14,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       len: [1]
     },
-    
-  },{
-    freezeTableName: true
-    })
-  
 
 
   return Subscription;
