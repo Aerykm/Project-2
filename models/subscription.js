@@ -14,14 +14,13 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       len: [1]
     },
-    trialPeriod: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: false
-    }
+    
+  },{
+    freezeTableName: true
+    })
   
-  });
 
 
   return Subscription;
-};
+}
   

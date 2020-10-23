@@ -8,10 +8,10 @@ $(document).ready(() => {
 $("#add-subs").on("click", function(event) {
   event.preventDefault();
   var newSubscription = {
-    subscriptionName: $("#subs_name").val().trim(),
-    subscriptionDate: $("#subs_date").val().trim(),
-    subscriptionCost: $("#subs_cost").val().trim(),
-    trialorSubscription: $("#trial_period").val().trim()
+    subsName: $("#subs_name").val().trim(),
+    dueDate: $("#subs_date").val(),
+    subsCost: $("#subs_cost").val(),
+    trialPeriod: $("#trial_period").val().trim()
   };
 
   $.post("/api/add", newSubscription)

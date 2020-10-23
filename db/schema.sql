@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS subscription_db;
 CREATE DATABASE subscription_db;
 USE subscription_db;
 
-CREATE TABLE subscription 
+CREATE TABLE Subscription 
 (
 	id int NOT NULL AUTO_INCREMENT,
 	subsName VARCHAR(255) NOT NULL,
